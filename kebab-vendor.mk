@@ -6,6 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/kebab
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Handset_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/oneplus/kebab/proprietary/odm/etc/acdbdata/acdb_version:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/acdb_version \
     vendor/oneplus/kebab/proprietary/odm/etc/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list \
     vendor/oneplus/kebab/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/oneplus/kebab/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
@@ -118,7 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
     vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
-    vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
+    vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
     vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service \
     vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/oneplus/kebab/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
@@ -130,6 +138,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/oneplus/kebab/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/oneplus/kebab/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
+    vendor/oneplus/kebab/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/oneplus/kebab/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/oneplus/kebab/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/oneplus/kebab/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
@@ -178,7 +187,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/oneplus/kebab/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/oneplus/kebab/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
-    vendor/oneplus/kebab/proprietary/vendor/etc/acdbdata/MTP/acdb_version:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/acdb_version \
     vendor/oneplus/kebab/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/oneplus/kebab/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/oneplus/kebab/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
@@ -193,9 +201,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/camera/distortion_result.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/distortion_result.bin \
     vendor/oneplus/kebab/proprietary/vendor/etc/camera/model.data:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model.data \
     vendor/oneplus/kebab/proprietary/vendor/etc/camera/segment.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/segment.dlc \
-    vendor/oneplus/kebab/proprietary/vendor/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/Nexus/ATT/ATT_profiles.xml \
-    vendor/oneplus/kebab/proprietary/vendor/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/Nexus/ROW/ROW_profiles.xml \
-    vendor/oneplus/kebab/proprietary/vendor/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/Nexus/VZW/VZW_profiles.xml \
     vendor/oneplus/kebab/proprietary/vendor/etc/cne/profileSlm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileSlm.xml \
     vendor/oneplus/kebab/proprietary/vendor/etc/cne/slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/slm.conf \
     vendor/oneplus/kebab/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -284,7 +289,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
-    vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
+    vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -298,24 +303,43 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/oneplus/kebab/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm.lst:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm.lst \
     vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm10.txt \
     vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm11.txt \
     vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm12.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm13.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm15.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm7.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8.txt \
-    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm9.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm14_a.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_a.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm14_b.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_b.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm14_c.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm14_c.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm16_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm16_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm16_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm16_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm17_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm17_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm17_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm17_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm18_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm18_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm18_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm18_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm1_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm1_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm1_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm1_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm2_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm2_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm2_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm2_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm3_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm3_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm3_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm3_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm4_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm4_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm4_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm4_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm5_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm5_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm5_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm5_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm6_center.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6_center.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm6_down.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6_down.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm6_up.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm6_up.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm8_a.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_a.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm8_b.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_b.txt \
+    vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/inParm8_c.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/inParm8_c.txt \
     vendor/oneplus/kebab/proprietary/vendor/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/mcfCheck.txt \
     vendor/oneplus/kebab/proprietary/vendor/etc/irissoft.fw:$(TARGET_COPY_OUT_VENDOR)/etc/irissoft.fw \
     vendor/oneplus/kebab/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
@@ -362,9 +386,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/bmi26x_0_crt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/bmi26x_0_crt_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt_cfg.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380_0.json \
-    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_T0_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_T0_sx9324_0.json \
-    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_T0_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_T0_sx9324up_0.json \
+    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_ak991x_0.json \
+    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_amd_sw_disabled.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmi26x_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmp380_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bu52053nvx_0.json \
@@ -373,6 +397,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_hdk_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_ak991x_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_hdk_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_lsm6dst_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_hdk_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_lsm6dst_1.json \
+    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_icm4x6xx_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_irq.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lps22hh_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lsm6dsm_0.json \
@@ -389,7 +414,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_stk3a6x_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_svr_bma4_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_bma4_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_svr_bmg160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_bmg160_0.json \
-    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_svr_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_icm4x6xx_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_svr_rpr0521rs_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_svr_rpr0521rs_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx9324_0.json \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/config/kona_sx9324up_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx9324up_0.json \
@@ -470,6 +494,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
     vendor/oneplus/kebab/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
@@ -709,8 +734,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/oneplus/kebab/proprietary/vendor/lib/hw/sound_trigger.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.kona.so \
     vendor/oneplus/kebab/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/kebab/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/oneplus/kebab/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/oneplus/kebab/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/oneplus/kebab/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
@@ -994,8 +1020,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
     vendor/oneplus/kebab/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
